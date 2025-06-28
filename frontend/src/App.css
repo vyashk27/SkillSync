@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full screen background */
+.app-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: rgb(111, 94, 92);
+  /*margin: 0;
+  padding: 0;*/
+}
+
+/* Header styles */
+.app-header {
+  width: 100%;
+  height: 80px; /* or whatever height you prefer */
+  background-color: rgb(170, 192, 170);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* optional subtle shadow */
+  position: relative;
+  justify-content: space-between;
+}
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #228B22; /* Forest green */
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 70px; /* Adjust based on your logo's aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  /* If you want to add some spacing: */
+  margin-left: 20px;
+}
+
+/* Main section */
+.main-content {
+  flex-grow: 1;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer styles */
+.app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 1px;
+  text-align: center;
+  background-color: white;
+  margin-top: auto; /* Pushes footer to bottom */
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1); /* Shadow at top of footer */
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-container {
+  margin-top: 30px;
+}
+
+.skill-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-weight: bold;
+}
+
+.skill-form input,
+.skill-form select {
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.skill-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #228B22;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.skill-form button:hover {
+  background-color: #1c701c;
+}
+
+.skill-form button:active {
+  transform: scale(0.98);
+}
+
+.results-container {
+  margin-top: 30px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-container h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.results-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.results-container li {
+  margin: 5px 0;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Form layout */
+.form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 1.8rem;
+}
+
+/* Labels */
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs and dropdown */
+.input-box {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+.input-box:focus {
+  border-color: #228B22;
+  outline: none;
+}
+
+/* Button */
+.recommend-button {
+  display: block;
+  width: 100%;
+  background: #228B22;
+  color: white;
+  padding: 12px 0;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.recommend-button:hover {
+  background: #1e7c1e;
+  box-shadow: 0 0 10px #1e7c1e80;
+}
+.recommend-button:active {
+  transform: scale(0.98);
+}
+
+.input-box {
+  resize: vertical; /* allow expanding */
+  font-family: inherit;
+}
