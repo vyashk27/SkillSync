@@ -73,13 +73,13 @@ skillsync/
 
 ### 🧪 Sample Request (resume-to-recommend)
 
-```json
+json
 {
   "resume_text": "Skilled in Python, SQL, Excel. Worked with Tableau and ML models.",
   "job_title": "Data Scientist"
 }
 
-✅ Sample Response
+### ✅ Sample Response
 {
   "extracted_skills": ["python", "sql", "excel", "tableau", "machine learning"],
   "recommendation": {
@@ -89,30 +89,30 @@ skillsync/
   }
 }
 
-⚙️ Setup Instructions
+# ⚙️ Setup Instructions
 
-🔧 Backend Setup
+## 🔧 Backend Setup
 
-# Clone the project
+### Clone the project
 git clone https://github.com/vyashk27/skillsync.git
 cd skillsync
 
-# Setup virtual environment
+### Setup virtual environment
 python -m venv venv
 venv\Scripts\activate  # or source venv/bin/activate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Apply migrations
+### Apply migrations
 python manage.py migrate
 
-# Run server
+### Run server
 python manage.py runserver
 
 
 
-⚛️ Frontend Setup (optional)
+## ⚛️ Frontend Setup (optional)
 
 cd frontend
 npm install
@@ -121,7 +121,7 @@ npm run dev
 Make sure backend is running at http://127.0.0.1:8000/
 
 
-🔐 Auth System (Optional)
+### 🔐 Auth System (Optional)
 Although not required to use the API, the project includes full JWT-based login/register functionality. Useful if you want to:
 
 - Track multiple resume uploads
@@ -132,7 +132,7 @@ Although not required to use the API, the project includes full JWT-based login/
 
 Currently: All ML endpoints are public by design.
 
-🎯 Future Roadmap
+### 🎯 Future Roadmap
  - Upload and parse .pdf / .docx resumes
 
  - Admin dashboard with skill trends
@@ -142,13 +142,13 @@ Currently: All ML endpoints are public by design.
  - Save & track user history (if login used)
 
 
- 👤 About the Author
+ ### 👤 About the Author
 Yashvardhan
 🎓 B.Tech CSE (Machine Learning Major)
 📊 Aspiring Data Scientist & Full Stack Developer
 🔗 LinkedIn - https://www.linkedin.com/in/vyashk27/
 
-📝 License
+### 📝 License
 MIT — Free to use, modify, or fork with credit.
 
 “This project helped me sharpen Django, REST APIs, NLP with spaCy, and frontend integration with React — and it’s production-ready too.” — Yashvardhan
